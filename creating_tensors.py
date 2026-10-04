@@ -7,8 +7,7 @@ import os
 import math
 import cv2
 from visualiser import generate_images
-
-
+#function to cretate training and validation tensors from a dataset of molecules
 def make_training_tensor(path_to_dataset,test_train_split, number_of_images_per_molecule,name_of_decoys_folder,name_of_ligands_folder,type_of_file,has_first_row_as_atom_names):
     resolution = 100
     rgb_channels = 3

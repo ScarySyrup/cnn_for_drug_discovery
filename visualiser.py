@@ -23,8 +23,6 @@ max_point_mag = 10
 
 
 
-#reading and processing the old dataset
-
 
 
 
@@ -162,6 +160,7 @@ def process_data(data,zoom_val=0.05,naming_index = 0,rotation_angles = torch.ten
 
 
 #Generate many images
+#for each image, rotate the molecule randomly and then project it to 2d
 def generate_images(data,number_of_images,speed,rad,atom_type,res=400,zoom=0.04,has_first_row_as_atom_names=False):
     video_tensor = torch.zeros(number_of_images,3,res,res)
     for i in range(number_of_images):

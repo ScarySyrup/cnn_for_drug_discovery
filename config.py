@@ -1,7 +1,7 @@
 from creating_tensors import make_training_tensor
 import creating_tensors
-path_to_dataset = '466'
-
+path_to_dataset = '737 copy'
+master_resolution = 100
 make_training_tensor(path_to_dataset,
                       test_train_split = 0.7,
                       number_of_images_per_molecule=6,
